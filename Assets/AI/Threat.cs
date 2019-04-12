@@ -76,7 +76,7 @@ namespace Assets.AI
         private void Reload()
         {
             _isReloading = true;
-            var r = Random.Range(1f,4f);
+            var r = Random.Range(2f,4f);
             Invoke("FinishReloading", r);
         }
 
