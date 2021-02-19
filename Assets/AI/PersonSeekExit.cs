@@ -74,7 +74,7 @@ namespace Assets.AI
                 return;
             }
             if (_nearestExit != null &&
-                Vector3.Distance(Agent.transform.position, _nearestExit.transform.position) < 2.0f)
+                Vector3.Distance(Agent.transform.position, _nearestExit.transform.position) < 3.5f)
                 Leave(_nearestExit);
             
         }
