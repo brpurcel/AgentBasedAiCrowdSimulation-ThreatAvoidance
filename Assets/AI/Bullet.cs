@@ -21,7 +21,7 @@ namespace Assets.AI
                 part.CurrentHealth -= BulletDamage;
             }
 
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
     }
 }

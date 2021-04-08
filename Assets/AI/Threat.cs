@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 namespace Assets.AI
 {
-    public class Threat : MonoBehaviour
+    public class Threat : Person
     {
         private bool _isFiring;
         private bool _isReloading;
@@ -28,11 +28,10 @@ namespace Assets.AI
         public List<Person> VisibleTargets = new List<Person>();
 
         // Use this for initialization
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
             AmmoCount = MagazineSize;
-            Invoke("EnableObstacle", 5f);
-            //Invoke("EnableAgent", 15f);
             StartCoroutine("DoProximityCheck");
         }
 
@@ -41,12 +40,15 @@ namespace Assets.AI
         {
             Aim();
             Fire();
-
             //walk toward target at randomized rate
-            if (Vector3.Distance(transform.position, Target.transform.position) > 10 && !_isReloading)
+            if (Vector3.Distance(transform.position, Target.transform.position) > 15 && !_isReloading)
             {
-                var r = Random.Range(1.0f, 2.0f);
-                transform.position += transform.forward * r * Time.deltaTime;
+                Agent.destination = Target.transform.position;
+                // var r = Random.Range(1.0f, 2.0f);
+                // transform.position += transform.forward * r * Time.deltaTime;
+            }else
+            {
+                Agent.destination = Agent.transform.position;
             }
         }
 
@@ -167,18 +169,6 @@ namespace Assets.AI
             if (!angleIsGlobal)
                 angleInDegrees += transform.eulerAngles.y;
             return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
-        }
-
-        private void EnableObstacle()
-        {
-            gameObject.GetComponent<NavMeshAgent>().enabled = false;
-            gameObject.GetComponent<NavMeshObstacle>().enabled = true;
-        }
-
-        private void EnableAgent()
-        {
-            gameObject.GetComponent<NavMeshObstacle>().enabled = false;
-            gameObject.GetComponent<NavMeshAgent>().enabled = true;
         }
 
         private void OnDrawGizmosSelected()

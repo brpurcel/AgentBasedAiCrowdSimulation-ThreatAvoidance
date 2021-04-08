@@ -25205,7 +25205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4156761658911672, guid: 77649cc71b3830b44b2922e196393dc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.72
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 4156761658911672, guid: 77649cc71b3830b44b2922e196393dc4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25213,7 +25213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4156761658911672, guid: 77649cc71b3830b44b2922e196393dc4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.05
+      value: 26.31
       objectReference: {fileID: 0}
     - target: {fileID: 4156761658911672, guid: 77649cc71b3830b44b2922e196393dc4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25239,7 +25239,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 114103296613029514, guid: 77649cc71b3830b44b2922e196393dc4,
         type: 3}
       propertyPath: m_Enabled
@@ -25248,7 +25248,7 @@ PrefabInstance:
     - target: {fileID: 114602764073378148, guid: 77649cc71b3830b44b2922e196393dc4,
         type: 3}
       propertyPath: AmmoCount
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114602764073378148, guid: 77649cc71b3830b44b2922e196393dc4,
         type: 3}
@@ -25324,26 +25324,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ObstacleAvoidanceType
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 208413302886830128, guid: 77649cc71b3830b44b2922e196393dc4,
-        type: 3}
-      propertyPath: m_Carve
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208413302886830128, guid: 77649cc71b3830b44b2922e196393dc4,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 208413302886830128, guid: 77649cc71b3830b44b2922e196393dc4,
-        type: 3}
-      propertyPath: m_Extents.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 208413302886830128, guid: 77649cc71b3830b44b2922e196393dc4,
-        type: 3}
-      propertyPath: m_Extents.z
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77649cc71b3830b44b2922e196393dc4, type: 3}

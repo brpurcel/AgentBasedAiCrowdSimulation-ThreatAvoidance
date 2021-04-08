@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 195295794920889608}
   - component: {fileID: 114602764073378148}
   - component: {fileID: 114103296613029514}
-  - component: {fileID: 208413302886830128}
   - component: {fileID: 64328854803156510}
   m_Layer: 0
   m_Name: Threat
@@ -202,22 +201,6 @@ MonoBehaviour:
   SpeedModifier: 1.1422533
   WoundCount: 0
   WoundHandicap: 0
---- !u!208 &208413302886830128
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511635975753190}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 5, y: 0.5, z: 5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!64 &64328854803156510
 MeshCollider:
   m_ObjectHideFlags: 0
